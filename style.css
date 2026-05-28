@@ -1,0 +1,131 @@
+/*
+#111844
+#4B5694
+#7288AE
+#EAE0CF
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #111844;
+  font-family: "Montserrat", sans-serif;
+  padding: 32px 20px;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #EAE0CF;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+#controlDiv {
+  width: 100%;
+  max-width: 760px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 42px;
+}
+
+#tskInp {
+  flex: 1;
+  min-width: 0;
+  height: 68px;
+  padding: 12px 16px;
+  background: transparent;
+  font-size: 1.6rem;
+  color: #EAE0CF;
+  border: none;
+  border-bottom: 3px solid #7288AE;
+  outline: none;
+}
+
+#tskInp::placeholder {
+  color: rgba(234, 224, 207, 0.65);
+}
+
+#addButt {
+  height: 68px;
+  padding: 0 22px;
+  background-color: #4B5694;
+  color: #EAE0CF;
+  font-size: 1.25rem;
+  border: 4px solid #7288AE;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.25s ease all;
+  white-space: nowrap;
+}
+
+#addButt:hover,
+#addButt:active {
+  background-color: #EAE0CF;
+  color: #4B5694;
+}
+
+#taskDiv {
+  width: 100%;
+  max-width: 760px;
+  padding: 12px 0;
+  text-align: center;
+}
+
+#tskList {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.task {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #EAE0CF;
+  font-size: 1.25rem;
+  list-style: none;
+  padding: 14px;
+  border: 2px solid #4B5694;
+  border-radius: 14px;
+  background-color: rgba(75, 86, 148, 0.25);
+}
+
+.task span {
+  flex: 1;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.checkButtn,
+.editButtn,
+.delButtn {
+  padding: 9px 12px;
+  font-size: 1rem;
+  color: #EAE0CF;
+  background-color: #172e55;
+  border: 1px solid #7288AE;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.checkButtn:hover,
+.editButtn:hover,
+.delButtn:hover {
+  font-size: 0.85rem;
+  padding: 7px 8px;
+}
